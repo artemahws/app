@@ -11,7 +11,7 @@ services:
         - 1212:80
     working_dir: ${APP_PATH_CONTAINER}
   db:
-    image: mariadb
+    images: mariadb
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: 1111

@@ -14,14 +14,14 @@ services:
     image: mariadb
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: 1111
+      MYSQL_ROOT_PASSWORD: 123
     volumes: 
         - ${DB_PATH_HOST}:/var/lib/mysql
   adminer:
     image: adminer
     restart: always
     ports:
-      - 1111:8080
+      - 1880:8080
   composer:
     image: composer:1.6
     volumes: 

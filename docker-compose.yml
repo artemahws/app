@@ -8,7 +8,7 @@ services:
     volumes: 
         -${APP_PATH_HOST}:${APP_PATH_CONTAINER}
     ports: 
-        - 1212:80
+        - 1180:80
     working_dir: ${APP_PATH_CONTAINER}
   db:
     image: mariadb
@@ -21,7 +21,7 @@ services:
     image: adminer
     restart: always
     ports:
-      - 1880:8080
+      - 1188:8080
   composer:
     image: composer:1.6
     volumes: 
